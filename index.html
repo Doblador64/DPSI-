@@ -1,38 +1,390 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tren - UPIICSA</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-            font-family: Arial, sans-serif;
-        }
-        canvas {
-            display: block;
-            width: 100%;
-            height: 100%;
-        }
-        #info {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background: rgba(0,0,0,0.7);
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-    </style>
+    <title>Ingeniería Ferroviaria UPIICSA</title>
+    <!-- Agregar Font Awesome para íconos -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <div id="info">
-        <h2>Visualizador de Locomotora</h2>
-        <p>Usa el mouse para rotar, scroll para acercar/alejar y click derecho para mover.</p>
-    </div>
-    
-    <script type="module" src="./src/main.js"></script>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-train"></i>
+                <span>Ingeniería Ferroviaria UPIICSA</span>
+            </div>
+            <ul class="nav-links">
+                <!-- Navegación simplificada según lo solicitado -->
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <div class="mobile-menu">
+            <button class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <!-- Navegación simplificada según lo solicitado -->
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Ingeniería Ferroviaria</h1>
+            <p>Descubre el fascinante mundo del transporte ferroviario y conviértete en un profesional del sector con el
+                plan de estudios de UPIICSA.</p>
+            <a href="#about" class="btn">Conoce más</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Acerca de la Ingeniería Ferroviaria</h2>
+                <p>Un vistazo a esta importante disciplina de ingeniería</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>¿Qué es la Ingeniería Ferroviaria?</h3>
+                    <p>La Ingeniería Ferroviaria es una disciplina especializada que se enfoca en el diseño,
+                        construcción, operación y mantenimiento de sistemas ferroviarios. Combina conocimientos de
+                        ingeniería civil, mecánica, eléctrica y de sistemas para crear infraestructuras de transporte
+                        eficientes y sostenibles.</p>
+                    <p>En UPIICSA (Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y
+                        Administrativas), ofrecemos un programa educativo completo que prepara a los estudiantes para
+                        enfrentar los retos del sector ferroviario moderno, contribuyendo al desarrollo de sistemas de
+                        transporte más eficientes y amigables con el medio ambiente.</p>
+                    <p>Los ingenieros ferroviarios juegan un papel crucial en la planificación y ejecución de proyectos
+                        de infraestructura que conectan ciudades y comunidades, facilitando el movimiento de personas y
+                        mercancías de manera eficiente y sostenible.</p>
+                </div>
+                <div class="about-image">
+                    <img src="/api/placeholder/600/400" alt="Ingeniería Ferroviaria">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="curriculum" id="curriculum">
+        <div class="container">
+            <div class="section-title">
+                <h2>Plan de Estudios</h2>
+                <p>Conoce las áreas de formación y materias que estudiarás</p>
+            </div>
+            <div class="curriculum-grid">
+                <div class="curriculum-item">
+                    <div class="curriculum-item-image">
+                        <img src="/api/placeholder/400/300" alt="Fundamentos de Ingeniería">
+                    </div>
+                    <div class="curriculum-item-content">
+                        <h3>Fundamentos de Ingeniería</h3>
+                        <p>Materias básicas que te darán el conocimiento necesario para comprender los principios de la
+                            ingeniería aplicados al sector ferroviario.</p>
+                        <p>Incluye cálculo, física, mecánica, resistencia de materiales y más.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+                <div class="curriculum-item">
+                    <div class="curriculum-item-image">
+                        <img src="/api/placeholder/400/300" alt="Diseño de Infraestructura">
+                    </div>
+                    <div class="curriculum-item-content">
+                        <h3>Diseño de Infraestructura</h3>
+                        <p>Aprenderás a diseñar vías férreas, estaciones, puentes y túneles, considerando factores
+                            geotécnicos y estructurales.</p>
+                        <p>Incluye topografía, diseño de vías, estructuras y geotecnia ferroviaria.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+                <div class="curriculum-item">
+                    <div class="curriculum-item-image">
+                        <img src="/api/placeholder/400/300" alt="Sistemas de Señalización">
+                    </div>
+                    <div class="curriculum-item-content">
+                        <h3>Sistemas de Señalización</h3>
+                        <p>Estudiarás los sistemas de control y señalización que garantizan la seguridad y eficiencia en
+                            la operación ferroviaria.</p>
+                        <p>Incluye electrónica, telecomunicaciones y sistemas de control automático.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+                <div class="curriculum-item">
+                    <div class="curriculum-item-image">
+                        <img src="/api/placeholder/400/300" alt="Material Rodante">
+                    </div>
+                    <div class="curriculum-item-content">
+                        <h3>Material Rodante</h3>
+                        <p>Conocerás los diferentes tipos de trenes, locomotoras y vagones, así como sus sistemas
+                            mecánicos y de propulsión.</p>
+                        <p>Incluye diseño de vehículos, sistemas de propulsión y dinámica ferroviaria.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+                <div class="curriculum-item">
+                    <div class="curriculum-item-image">
+                        <img src="/api/placeholder/400/300" alt="Gestión y Planificación">
+                    </div>
+                    <div class="curriculum-item-content">
+                        <h3>Gestión y Planificación</h3>
+                        <p>Aprenderás a gestionar proyectos ferroviarios, planificar operaciones y optimizar el
+                            mantenimiento de la infraestructura.</p>
+                        <p>Incluye logística, economía del transporte y gestión de proyectos.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+                <div class="curriculum-item">
+                    <div class="curriculum-item-image">
+                        <img src="/api/placeholder/400/300" alt="Innovación y Tecnología">
+                    </div>
+                    <div class="curriculum-item-content">
+                        <h3>Innovación y Tecnología</h3>
+                        <p>Explorarás las tecnologías emergentes en el sector ferroviario, como trenes de alta
+                            velocidad, sistemas autónomos y energías renovables.</p>
+                        <p>Incluye innovación tecnológica, sostenibilidad y sistemas inteligentes.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="locomotive" id="locomotive">
+        <div class="container">
+            <div class="section-title">
+                <h2>El Mundo de las Locomotoras</h2>
+                <p>Conoce en profundidad estos fascinantes vehículos ferroviarios</p>
+            </div>
+            <div class="locomotive-content">
+                <div class="locomotive-3d" id="locomotive-model">
+                    <!-- Aquí se renderizará el modelo 3D -->
+                </div>
+                <div class="locomotive-info">
+                    <h3>Locomotoras: El Corazón del Ferrocarril</h3>
+                    <p>Las locomotoras son vehículos ferroviarios diseñados para proporcionar la fuerza motriz necesaria
+                        para mover trenes. Con una rica historia que se remonta a principios del siglo XIX, las
+                        locomotoras han evolucionado desde las primeras máquinas de vapor hasta las modernas unidades
+                        eléctricas y diésel de alta potencia.</p>
+                    <p>Explora las diferentes partes, tipos y evolución de estos impresionantes vehículos ferroviarios.
+                    </p>
+
+                    <div class="locomotive-tabs">
+                        <button class="locomotive-tab active" data-tab="history">Historia</button>
+                        <button class="locomotive-tab" data-tab="types">Tipos</button>
+                        <button class="locomotive-tab" data-tab="components">Componentes</button>
+                        <button class="locomotive-tab" data-tab="technology">Tecnología</button>
+                    </div>
+
+                    <div class="locomotive-tab-content">
+                        <div class="locomotive-tab-pane active" id="history">
+                            <h4>Historia de las Locomotoras</h4>
+                            <p>La historia de las locomotoras comenzó en 1804 con la "Pen-y-Darren" de Richard
+                                Trevithick, considerada la primera locomotora de vapor funcional. Sin embargo, fue
+                                George Stephenson quien revolucionó el transporte ferroviario con su "Rocket" en 1829,
+                                estableciendo las bases del ferrocarril moderno.</p>
+                            <p>Línea de tiempo:</p>
+                            <ul>
+                                <li><strong>1804:</strong> Primera locomotora de vapor funcional de Richard Trevithick
+                                </li>
+                                <li><strong>1829:</strong> La "Rocket" de George Stephenson</li>
+                                <li><strong>1879:</strong> Primera locomotora eléctrica práctica de Werner von Siemens
+                                </li>
+                                <li><strong>1912:</strong> Primera locomotora diésel-eléctrica comercial</li>
+                                <li><strong>1964:</strong> Primer tren de alta velocidad (Shinkansen) en Japón</li>
+                                <li><strong>1990s-Presente:</strong> Desarrollo de trenes de levitación magnética y
+                                    tecnologías de hidrógeno</li>
+                            </ul>
+                        </div>
+                        <div class="locomotive-tab-pane" id="technology">
+                            <h4>Tecnología Avanzada</h4>
+                            <p>Las locomotoras modernas incorporan tecnologías avanzadas para mejorar su rendimiento,
+                                seguridad y sostenibilidad:</p>
+                            <ul>
+                                <li><strong>Sistemas de Control Electrónico:</strong> Computadoras avanzadas que
+                                    optimizan la potencia, el consumo de combustible y la tracción.</li>
+                                <li><strong>Regeneración de Energía:</strong> Sistemas que recuperan energía durante el
+                                    frenado para reutilizarla o devolverla a la red.</li>
+                                <li><strong>Monitoreo en Tiempo Real:</strong> Sensores que supervisan todos los
+                                    sistemas críticos para mantenimiento predictivo.</li>
+                                <li><strong>Aerodinámica Optimizada:</strong> Diseños que reducen la resistencia al
+                                    aire, especialmente en trenes de alta velocidad.</li>
+                                <li><strong>Tecnologías de Reducción de Emisiones:</strong> Catalizadores, filtros y
+                                    motores de última generación para minimizar el impacto ambiental.</li>
+                                <li><strong>Sistemas de Seguridad:</strong> ERTMS, ATP, ATC y otros sistemas que
+                                    garantizan la operación segura del tren.</li>
+                            </ul>
+                            <p>El desarrollo tecnológico continúa avanzando hacia locomotoras más eficientes, autónomas
+                                y sostenibles, con investigaciones en propulsión por hidrógeno, baterías de alta
+                                capacidad y sistemas de conducción automática.</p>
+                        </div>
+                    </div>
+
+                    <div class="locomotive-gallery">
+                        <div class="locomotive-gallery-item">
+                            <img src="/api/placeholder/300/200" alt="Locomotora de vapor">
+                        </div>
+                        <div class="locomotive-gallery-item">
+                            <img src="/api/placeholder/300/200" alt="Locomotora diésel">
+                        </div>
+                        <div class="locomotive-gallery-item">
+                            <img src="/api/placeholder/300/200" alt="Locomotora eléctrica">
+                        </div>
+                        <div class="locomotive-gallery-item">
+                            <img src="/api/placeholder/300/200" alt="Tren de alta velocidad">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="opportunities" id="opportunities">
+        <div class="container">
+            <div class="section-title">
+                <h2>Oportunidades Profesionales</h2>
+                <p>Descubre las posibilidades laborales que ofrece la Ingeniería Ferroviaria</p>
+            </div>
+            <div class="opportunities-content">
+                <div class="opportunity-card">
+                    <i class="fas fa-drafting-compass"></i>
+                    <h3>Diseño de Infraestructura</h3>
+                    <p>Diseño de vías férreas, estaciones, túneles y puentes. Planificación y desarrollo de nuevas
+                        líneas ferroviarias o mejora de las existentes.</p>
+                </div>
+                <div class="opportunity-card">
+                    <i class="fas fa-hard-hat"></i>
+                    <h3>Construcción y Supervisión</h3>
+                    <p>Gestión y supervisión de proyectos de construcción ferroviaria, asegurando el cumplimiento de
+                        especificaciones técnicas y normativas.</p>
+                </div>
+                <div class="opportunity-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Mantenimiento y Operación</h3>
+                    <p>Gestión del mantenimiento preventivo y correctivo de infraestructuras y material rodante.
+                        Planificación y optimización de operaciones ferroviarias.</p>
+                </div>
+                <div class="opportunity-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Investigación y Desarrollo</h3>
+                    <p>Desarrollo de nuevas tecnologías y soluciones innovadoras para mejorar la eficiencia, seguridad y
+                        sostenibilidad del transporte ferroviario.</p>
+                </div>
+                <div class="opportunity-card">
+                    <i class="fas fa-university"></i>
+                    <h3>Consultoría y Docencia</h3>
+                    <p>Asesoramiento a empresas y gobiernos en proyectos ferroviarios. Formación de nuevos profesionales
+                        en instituciones educativas.</p>
+                </div>
+                <div class="opportunity-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Proyección Internacional</h3>
+                    <p>Participación en proyectos ferroviarios internacionales, aprovechando la creciente demanda global
+                        de sistemas de transporte sostenibles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <!-- Enlaces simplificados según lo solicitado -->
+            </ul>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+            <p class="copyright">&copy; 2025 Ingeniería Ferroviaria UPIICSA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Menú móvil
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const closeMenuBtn = document.querySelector('.close-menu');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        // Cerrar menú al hacer clic en un enlace
+        const mobileLinks = document.querySelectorAll('.mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Navegación suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 60,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Tabs de locomotoras
+        const locomotiveTabs = document.querySelectorAll('.locomotive-tab');
+        const locomotiveTabPanes = document.querySelectorAll('.locomotive-tab-pane');
+
+        locomotiveTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Desactivar todas las pestañas y paneles
+                locomotiveTabs.forEach(t => t.classList.remove('active'));
+                locomotiveTabPanes.forEach(p => p.classList.remove('active'));
+
+                // Activar la pestaña seleccionada
+                tab.classList.add('active');
+
+                // Activar el panel correspondiente
+                const tabId = tab.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Formulario de contacto - eliminado según lo solicitado
+
+        // Código para el modelo 3D de la locomotora usando THREE.js
+        // Nota: Este es un placeholder para cuando implementes Three.js
+        function initLocomotive3D() {
+            const container = document.getElementById('locomotive-model');
+
+            // Aquí iría tu código Three.js para renderizar el modelo 3D
+            // Por ahora, solo mostramos un mensaje
+            container.innerHTML = '<div style="display: flex; justify-content: center; align-items: center; height: 100%; color: #666; text-align: center; padding: 20px;">' +
+                '<p>Modelo 3D de locomotora<br>(Visualización con Three.js por implementar)</p>' +
+                '</div>';
+        }
+
+        // Inicializar modelo 3D cuando el DOM esté listo
+        document.addEventListener('DOMContentLoaded', function () {
+            initLocomotive3D();
+        });
+    </script>
 </body>
+
 </html>
