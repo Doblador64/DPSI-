@@ -39,6 +39,14 @@ nav {
   align-items: center;
 }
 
+.mobile-menu-btn {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -74,7 +82,7 @@ nav {
 .hero {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("/api/placeholder/1920/1080");
+    url("");
   background-size: cover;
   background-position: center;
   display: flex;
