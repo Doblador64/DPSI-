@@ -4,7 +4,6 @@
   --accent-color: #ffcc00;
   --text-color: #333333;
   --light-bg: #f5f5f5;
-  --white: #ffffff;
 }
 
 * {
@@ -40,7 +39,7 @@ li {
 }
 
 a {
-  color: var(--white);
+  color: white;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
