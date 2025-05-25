@@ -225,7 +225,20 @@ function createSky() {
 
 // Cargar modelo GLTF
 const loader = new GLTFLoader();
+// Después de crear el renderer (const renderer = ...)
+if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+  // Solo estos 3 ajustes esenciales
+  camera.position.set(3, 2, 3); // Vista más cercana
+  controls.touchDampingFactor = 0.2; // Movimiento más suave
+  renderer.setPixelRatio(window.devicePixelRatio); // Calidad adaptada
+}
+
+// En la carga del modelo GLTF, dentro del loader.load():
+if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+  locomotive.scale.set(0.8, 0.8, 0.8); // Modelo un poco más pequeño
+}
 loader.load(
+  
   "/modelos/locomotora.glb",
   (gltf) => {
     locomotive = gltf.scene;
