@@ -162,6 +162,66 @@ function onMouseClick(event) {
   }
 }
 
+function createGrass() {
+    // Textura base para el pasto (primer material)
+    const baseGrassGeometry = new THREE.PlaneGeometry(20, 20);
+    const baseGrassMaterial = new THREE.MeshStandardMaterial({ // Cambiado el nombre
+        color: 0x3a5f0b,
+        roughness: 0.6,
+        metalness: 0.0
+    });
+    const baseGrass = new THREE.Mesh(baseGrassGeometry, baseGrassMaterial);
+    baseGrass.rotation.x = -Math.PI / 2;
+    baseGrass.position.y = -0.25;
+    baseGrass.receiveShadow = true;
+    scene.add(baseGrass);
+
+    // Hierba 3D (segundo material con diferente nombre)
+    const grassCount = 400;
+    const grassGeometry = new THREE.BufferGeometry();
+    const positions = [];
+    const colors = [];
+    
+    for (let i = 0; i < grassCount; i++) {
+        const x = Math.random() * 20 - 10;
+        const z = Math.random() * 20 - 10;
+        const y = 0;
+        
+        positions.push(x, y, z);
+        positions.push(x, y + Math.random() * 0.5 + 0.1, z);
+        positions.push(x + (Math.random() - 0.5) * 0.2, y, z + (Math.random() - 0.5) * 0.2);
+        
+        const hue = 0.3 + Math.random() * 0.1;
+        colors.push(hue, 0.8, 0.3);
+        colors.push(hue, 0.8, 0.3);
+        colors.push(hue, 0.8, 0.3);
+    }
+    
+    grassGeometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+    grassGeometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+    
+    const grassBladesMaterial = new THREE.MeshBasicMaterial({ // Cambiado el nombre
+        vertexColors: true,
+        side: THREE.DoubleSide
+    });
+    
+    const grassField = new THREE.Mesh(grassGeometry, grassBladesMaterial);
+    scene.add(grassField);
+}
+
+function createSky() {
+    // Cielo con gradiente
+    const skyGeometry = new THREE.SphereGeometry(50, 32, 32);
+    const skyMaterial = new THREE.MeshBasicMaterial({
+        color: 0x87CEEB,
+        side: THREE.BackSide
+    });
+    const sky = new THREE.Mesh(skyGeometry, skyMaterial);
+    scene.add(sky);
+    
+    // Niebla para profundidad
+    scene.fog = new THREE.FogExp2(0x87CEEB, 0.01);
+}
 
 // Cargar modelo GLTF
 const loader = new GLTFLoader();
@@ -190,6 +250,8 @@ loader.load(
     // Crear entorno
     createTrainTracks();
     createTrees();
+    createGrass();
+    createSky();
 
     // Añadir hotspots (puntos interactivos)
     if (locomotive) {
