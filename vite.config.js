@@ -2,21 +2,23 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/',
+  base: '/DPSI/', // Asegúrate que coincide con tu repo
   server: {
     port: 5173,
-    open: true // Abre el navegador automáticamente
+    strictPort: true,
+    open: true
   },
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html') // Punto de entrada
+        main: resolve(__dirname, 'index.html'),
+        model: resolve(__dirname, 'model.html') // Añade esta entrada
       }
     }
   },
   optimizeDeps: {
-    include: ['three'] // Optimiza Three.js para desarrollo
+    include: ['three']
   }
 });

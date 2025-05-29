@@ -239,7 +239,7 @@ if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
 }
 loader.load(
   
-  "/modelos/locomotora.glb",
+  "/DPSI/modelos/locomotora.glb",
   (gltf) => {
     locomotive = gltf.scene;
     locomotive.scale.set(1, 1, 1);
