@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingeniería Ferroviaria UPIICSA</title>
     <!-- Agregar Font Awesome para íconos -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="shortcut icon" href="/Img/subway.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./Img/subway.ico" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
 
@@ -31,6 +32,8 @@
         <div class="mobile-menu">
             <button class="close-menu">
                 <i class="fas fa-times"></i>
+                <br><br>
+                <i><a href="model.html">Ir al modelo</a></i>
             </button>
             <!-- <ul>
                 Navegación simplificada según lo solicitado
@@ -38,22 +41,28 @@
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Ingeniería Ferroviaria</h1>
-            <p>Descubre el fascinante mundo del transporte ferroviario y conviértete en un profesional del sector con el
+    <section class="hero headline">
+        <div class="hero-content tagline">
+            <h1 class="">Ingeniería Ferroviaria</h1>
+            <p class="">Descubre el fascinante mundo del transporte ferroviario y conviértete en un profesional
+                del sector con el
                 plan de estudios de UPIICSA.</p>
             <a href="#about" class="btn">Conoce más</a>
+            <br><br>
+
+            <h3>¿Quieres conocer nuestro modelo 3D de una locomotora?</h3>
+            <br>
+            <a href="model.html" class="btn">Ir al modelo</a>
         </div>
     </section>
 
     <section class="about" id="about">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title headline">
                 <h2>Acerca de la Ingeniería Ferroviaria</h2>
                 <p>Un vistazo a esta importante disciplina de ingeniería</p>
             </div>
-            <div class="about-content">
+            <div class="about-content tagline">
                 <div class="about-text">
                     <h3>¿Qué es la Ingeniería Ferroviaria?</h3>
                     <p>La Ingeniería Ferroviaria es una disciplina especializada que se enfoca en el diseño,
@@ -69,7 +78,7 @@
                         mercancías de manera eficiente y sostenible.</p>
                 </div>
                 <div class="about-image">
-                    <img src="/Img/ferroviaria.jpg" alt="Ingeniería Ferroviaria">
+                    <img src="./Img/test.jpg" alt="Ingeniería Ferroviaria">
                 </div>
             </div>
         </div>
@@ -77,81 +86,75 @@
 
     <section class="curriculum" id="curriculum">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title headline">
                 <h2>Plan de Estudios</h2>
                 <p>Conoce las áreas de formación y materias que estudiarás</p>
             </div>
             <div class="curriculum-grid">
-                <div class="curriculum-item">
+                <div class="curriculum-item widget">
                     <div class="curriculum-item-image">
-                        <img src="/api/placeholder/400/300" alt="Fundamentos de Ingeniería">
+                        <img src="./Img/FundamentosIng.png" alt="Fundamentos de Ingeniería">
                     </div>
                     <div class="curriculum-item-content">
                         <h3>Fundamentos de Ingeniería</h3>
                         <p>Materias básicas que te darán el conocimiento necesario para comprender los principios de la
                             ingeniería aplicados al sector ferroviario.</p>
                         <p>Incluye cálculo, física, mecánica, resistencia de materiales y más.</p>
-                        <a href="#" class="btn">Ver detalles</a>
                     </div>
                 </div>
-                <div class="curriculum-item">
+                <div class="curriculum-item widget">
                     <div class="curriculum-item-image">
-                        <img src="/api/placeholder/400/300" alt="Diseño de Infraestructura">
+                        <img src="./Img/DiseñoInfraestructura.jpg" alt="Diseño de Infraestructura">
                     </div>
                     <div class="curriculum-item-content">
                         <h3>Diseño de Infraestructura</h3>
                         <p>Aprenderás a diseñar vías férreas, estaciones, puentes y túneles, considerando factores
                             geotécnicos y estructurales.</p>
                         <p>Incluye topografía, diseño de vías, estructuras y geotecnia ferroviaria.</p>
-                        <a href="#" class="btn">Ver detalles</a>
                     </div>
                 </div>
-                <div class="curriculum-item">
+                <div class="curriculum-item widget">
                     <div class="curriculum-item-image">
-                        <img src="/api/placeholder/400/300" alt="Sistemas de Señalización">
+                        <img src="./Img/Señalizacion.jpg" alt="Sistemas de Señalización">
                     </div>
                     <div class="curriculum-item-content">
                         <h3>Sistemas de Señalización</h3>
                         <p>Estudiarás los sistemas de control y señalización que garantizan la seguridad y eficiencia en
                             la operación ferroviaria.</p>
                         <p>Incluye electrónica, telecomunicaciones y sistemas de control automático.</p>
-                        <a href="#" class="btn">Ver detalles</a>
                     </div>
                 </div>
-                <div class="curriculum-item">
+                <div class="curriculum-item widget">
                     <div class="curriculum-item-image">
-                        <img src="/api/placeholder/400/300" alt="Material Rodante">
+                        <img src="./Img/Rodante.webp" alt="Material Rodante">
                     </div>
                     <div class="curriculum-item-content">
                         <h3>Material Rodante</h3>
                         <p>Conocerás los diferentes tipos de trenes, locomotoras y vagones, así como sus sistemas
                             mecánicos y de propulsión.</p>
                         <p>Incluye diseño de vehículos, sistemas de propulsión y dinámica ferroviaria.</p>
-                        <a href="#" class="btn">Ver detalles</a>
                     </div>
                 </div>
-                <div class="curriculum-item">
+                <div class="curriculum-item widget">
                     <div class="curriculum-item-image">
-                        <img src="/api/placeholder/400/300" alt="Gestión y Planificación">
+                        <img src="./Img/Plan.webp" alt="Gestión y Planificación">
                     </div>
                     <div class="curriculum-item-content">
                         <h3>Gestión y Planificación</h3>
                         <p>Aprenderás a gestionar proyectos ferroviarios, planificar operaciones y optimizar el
                             mantenimiento de la infraestructura.</p>
                         <p>Incluye logística, economía del transporte y gestión de proyectos.</p>
-                        <a href="#" class="btn">Ver detalles</a>
                     </div>
                 </div>
-                <div class="curriculum-item">
+                <div class="curriculum-item widget">
                     <div class="curriculum-item-image">
-                        <img src="/api/placeholder/400/300" alt="Innovación y Tecnología">
+                        <img src="./Img/Innovacion.jpg" alt="Innovación y Tecnología">
                     </div>
                     <div class="curriculum-item-content">
                         <h3>Innovación y Tecnología</h3>
                         <p>Explorarás las tecnologías emergentes en el sector ferroviario, como trenes de alta
                             velocidad, sistemas autónomos y energías renovables.</p>
                         <p>Incluye innovación tecnológica, sostenibilidad y sistemas inteligentes.</p>
-                        <a href="#" class="btn">Ver detalles</a>
                     </div>
                 </div>
             </div>
@@ -160,15 +163,17 @@
 
     <section class="locomotive" id="locomotive">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title headline">
                 <h2>El Mundo de las Locomotoras</h2>
                 <p>Conoce en profundidad estos fascinantes vehículos ferroviarios</p>
             </div>
             <div class="locomotive-content">
-                <div class="locomotive-3d" id="locomotive-model">
-                    <!-- Aquí se renderizará el modelo 3D -->
-                </div>
-                <div class="locomotive-info">
+
+                <!-- <div class="locomotive-3d" id="locomotive-model">
+                     Aquí se renderizará el modelo 3D 
+                </div> -->
+
+                <div class="locomotive-info tagline">
                     <h3>Locomotoras: El Corazón del Ferrocarril</h3>
                     <p>Las locomotoras son vehículos ferroviarios diseñados para proporcionar la fuerza motriz necesaria
                         para mover trenes. Con una rica historia que se remonta a principios del siglo XIX, las
@@ -211,16 +216,16 @@
                             <p></p>
                             <div class="locomotive-gallery">
                                 <div class="locomotive-gallery-item">
-                                    <img src="/Img/locomotora-vapor.jpg" alt="Locomotora de vapor">
+                                    <img src="./Img/locomotora-vapor.jpg" alt="Locomotora de vapor">
                                 </div>
                                 <div class="locomotive-gallery-item">
-                                    <img src="/Img/locomotive-diesel.jpg" alt="Locomotora diésel">
+                                    <img src="./Img/locomotive-diesel.jpg" alt="Locomotora diésel">
                                 </div>
                                 <div class="locomotive-gallery-item">
-                                    <img src="Img/locomtora-electrica.jpeg" alt="Locomotora eléctrica">
+                                    <img src="./Img/locomtora-electrica.jpeg" alt="Locomotora eléctrica">
                                 </div>
                                 <div class="locomotive-gallery-item">
-                                    <img src="/Img/Tren-altavelocidad.jpg" alt="Tren de alta velocidad">
+                                    <img src="./Img/Tren-altavelocidad.jpg" alt="Tren de alta velocidad">
                                 </div>
                             </div>
                         </div>
@@ -228,6 +233,57 @@
 
                         <div class="locomotive-tab-pane" id="components">
                             <h4>Componentes de las locomotoras</h4>
+                            <div class="locomotive-components">
+
+                                <ul class="locomotive-card">
+                                    <p><strong>Locomotoras de vapor</strong></p>
+                                    <li><strong>Caldera: </strong>Es el corazón de la locomotora, donde el agua se
+                                        calienta
+                                        y se convierte en vapor.</li>
+                                    <li><strong>Cilindros: </strong>Es el corazón de la locomotora, donde el agua se
+                                        calienta y se convierte en vapor.</li>
+                                    <li><strong>Bielas: </strong>Reciben el vapor y lo convierten en energía mecánica
+                                        que
+                                        mueve las bielas.</li>
+                                    <li><strong>Ruedas: </strong>Transmiten el movimiento alternativo de los cilindros a
+                                        las ruedas, haciendo girar el eje.</li>
+                                    <li><strong>Chasis: </strong>Son las que se acoplan a los rieles y permiten que la
+                                        locomotora se desplace.</li>
+                                    <li><strong>Cabina del conductor: </strong>Soporta todos los componentes de la
+                                        locomotora y permite que se mantenga en su posición correcta.</li>
+                                    <li><strong>Otros: </strong>Incluyen elementos como los reguladores, ventiladores,
+                                        sopladores, sistemas de freno y más.</li>
+                                </ul>
+
+                                <ul class="locomotive-card">
+                                    <p><strong>Locomotoras diesel-eléctricas</strong></p>
+                                    <li><strong>Motor diésel: </strong>Produce energía mecánica que, a través de un
+                                        generador, se convierte en energía eléctrica.</li>
+                                    <li><strong>Generador: </strong>Convierte la energía mecánica del motor diésel en
+                                        energía eléctrica.</li>
+                                    <li><strong>Motores eléctricos de tracción: </strong>Reciben la energía eléctrica
+                                        del
+                                        generador y la utilizan para hacer girar las ruedas.</li>
+                                    <li><strong>Chasis: </strong>Soporta todos los componentes de la locomotora.</li>
+                                    <li><strong>Cabina del conductor: </strong>Donde el maquinista controla la
+                                        locomotora.
+                                    </li>
+                                    <li><strong>Otros: </strong>Componentes como sistemas de control, frenos, etc.</li>
+                                </ul>
+
+                                <ul class="locomotive-card">
+                                    <p><strong>Locomotoras eléctricas</strong></p>
+                                    <li><strong>Pantógrafo:</strong> Se conecta a la línea de contacto (catenaria) para
+                                        recibir energía eléctrica.</li>
+                                    <li><strong>Motor de tracción: </strong>Convierte la energía eléctrica en energía
+                                        mecánica para mover las ruedas.</li>
+                                    <li><strong>Chasis: </strong>Soporta todos los componentes de la locomotora.</li>
+                                    <li><strong>Cabina del conductor: </strong>Donde el maquinista controla la
+                                        locomotora.
+                                    </li>
+                                    <li><strong>Otros: </strong>Incluyen sistemas de control, frenos, etc.</li>
+                                </ul>
+                            </div>
                         </div>
 
 
@@ -263,42 +319,42 @@
 
     <section class="opportunities" id="opportunities">
         <div class="container">
-            <div class="section-title">
+            <div class="section-title headline">
                 <h2>Oportunidades Profesionales</h2>
                 <p>Descubre las posibilidades laborales que ofrece la Ingeniería Ferroviaria</p>
             </div>
             <div class="opportunities-content">
-                <div class="opportunity-card">
+                <div class="opportunity-card widget">
                     <i class="fas fa-drafting-compass"></i>
                     <h3>Diseño de Infraestructura</h3>
                     <p>Diseño de vías férreas, estaciones, túneles y puentes. Planificación y desarrollo de nuevas
                         líneas ferroviarias o mejora de las existentes.</p>
                 </div>
-                <div class="opportunity-card">
+                <div class="opportunity-card widget">
                     <i class="fas fa-hard-hat"></i>
                     <h3>Construcción y Supervisión</h3>
                     <p>Gestión y supervisión de proyectos de construcción ferroviaria, asegurando el cumplimiento de
                         especificaciones técnicas y normativas.</p>
                 </div>
-                <div class="opportunity-card">
+                <div class="opportunity-card widget">
                     <i class="fas fa-tools"></i>
                     <h3>Mantenimiento y Operación</h3>
                     <p>Gestión del mantenimiento preventivo y correctivo de infraestructuras y material rodante.
                         Planificación y optimización de operaciones ferroviarias.</p>
                 </div>
-                <div class="opportunity-card">
+                <div class="opportunity-card widget">
                     <i class="fas fa-search"></i>
                     <h3>Investigación y Desarrollo</h3>
                     <p>Desarrollo de nuevas tecnologías y soluciones innovadoras para mejorar la eficiencia, seguridad y
                         sostenibilidad del transporte ferroviario.</p>
                 </div>
-                <div class="opportunity-card">
+                <div class="opportunity-card widget">
                     <i class="fas fa-university"></i>
                     <h3>Consultoría y Docencia</h3>
                     <p>Asesoramiento a empresas y gobiernos en proyectos ferroviarios. Formación de nuevos profesionales
                         en instituciones educativas.</p>
                 </div>
-                <div class="opportunity-card">
+                <div class="opportunity-card widget">
                     <i class="fas fa-globe"></i>
                     <h3>Proyección Internacional</h3>
                     <p>Participación en proyectos ferroviarios internacionales, aprovechando la creciente demanda global
@@ -319,7 +375,6 @@
                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                 <li><a href="#"><i class="fab fa-youtube"></i></a></li>
             </ul>
             <p class="copyright">&copy; 2025 Ingeniería Ferroviaria UPIICSA. Todos los derechos reservados.</p>
@@ -327,6 +382,11 @@
     </footer>
 
     <script>
+
+        ScrollReveal().reveal('.headline');
+        ScrollReveal().reveal('.tagline', { delay: 300 });
+        ScrollReveal().reveal('.widget', { interval: 300 });
+
         // Menú móvil
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const closeMenuBtn = document.querySelector('.close-menu');
