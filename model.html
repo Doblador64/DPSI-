@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,11 @@
     <!-- SweetAlert CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
+
 <body>
     <div class="info">
         <div class="logo-container">
-            <img src="./Img/upiicsa-logo.png" alt="Escudo UPIICSA" class="logo">
+            <img src="/Img/upiicsa-logo.png" alt="Escudo UPIICSA" class="logo">
         </div>
         <h2>Visualizador de Locomotora</h2>
         <p class="instrucciones">Usa el mouse para rotar, scroll para acercar/alejar y click derecho para mover.</p>
@@ -27,16 +29,22 @@
     <div class="media-panel">
         <div class="video-container">
             <h3>¿Que es Ingenieria Ferroviaria?</h3>
-            <iframe src="https://www.youtube.com/embed/HIam08H0oaM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/HIam08H0oaM" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
         <div class="video-container">
             <h3>Plan de estudios UPIICSA</h3>
-            <iframe src="https://www.youtube.com/embed/KOeA79AzbIo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/KOeA79AzbIo" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
     </div>
 
     <!-- SweetAlert JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="module" src="./src/main.js"></script>
+    <!-- El archivo JS de Vite será inyectado automáticamente en dist/model.html tras el build -->
+    <!-- No es necesario referenciar /src/main.js manualmente aquí para producción -->
 </body>
+
 </html>

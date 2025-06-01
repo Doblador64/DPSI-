@@ -1,24 +1,24 @@
-import { defineConfig } from 'vite';
-import { resolve } from 'path';
+import { defineConfig } from "vite";
+import { resolve } from "path";
 
 export default defineConfig({
-  base: '/DPSI/', // Asegúrate que coincide con tu repo
+  base: "",
   server: {
     port: 5173,
     strictPort: true,
-    open: true
+    open: true,
   },
   build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
+    outDir: "dist",
+    assetsDir: "assets",
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        model: resolve(__dirname, 'model.html') // Añade esta entrada
-      }
-    }
+        main: resolve(__dirname, "index.html"),
+        model: resolve(__dirname, "model.html"),
+      },
+    },
   },
   optimizeDeps: {
-    include: ['three']
-  }
+    include: ["three"],
+  },
 });
