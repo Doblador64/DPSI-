@@ -113,7 +113,7 @@ function createTrees() {
 }
 
 // Crear un hotspot interactivo
-function createHotspot(position, name, description) {
+function createHotspot(position, name, description, imageUrl) {
   const geometry = new THREE.SphereGeometry(0.2, 16, 16);
   const material = new THREE.MeshBasicMaterial({
     color: 0x952f57,
@@ -123,6 +123,7 @@ function createHotspot(position, name, description) {
   sphere.position.copy(position);
   sphere.name = name;
   sphere.userData.description = description;
+  sphere.userData.imageUrl = imageUrl; // Guardar la imagen
   scene.add(sphere);
   hotspots.push(sphere);
   return sphere;
@@ -157,6 +158,9 @@ function onMouseClick(event) {
       title: hotspot.name,
       text: hotspot.userData.description,
       icon: "info",
+      imageUrl: hotspot.userData.imageUrl, // Mostrar imagen
+      imageWidth: 300,
+      imageHeight: 300,
       confirmButtonText: "Cerrar",
     });
   }
@@ -253,8 +257,8 @@ loader.load(
   "/modelos/locomotora.glb",
   (gltf) => {
     locomotive = gltf.scene;
-    locomotive.scale.set(1, 1, 1);
-    locomotive.position.set(0, 0, 0);
+    locomotive.scale.set(2, 2, 2);
+    locomotive.position.set(-2, 0.35, 0);
 
     // Rotar la locomotora si es necesario para alinearla con las vías
     // (ajusta este valor según la orientación de tu modelo)
@@ -281,45 +285,45 @@ loader.load(
     if (locomotive) {
       // Hotspots del lado derecho (valores positivos de X)
       createHotspot(
-        new THREE.Vector3(2, 1.5, 1.5),
+        new THREE.Vector3(2.5, 0, -0.6),
         "🛤️Sistema de Tracción🛤️",
-        "Sistema de tracción con convertidor de par y transmisión eléctrica."
+        "Sistema de tracción con convertidor de par y transmisión eléctrica.",
+        "/Img/traccion.png"
       );
       createHotspot(
-        new THREE.Vector3(3.8, 0, 0),
+        new THREE.Vector3(5, 0, 0),
         "🛤️Sistemas de Frenado🛤️",
-        "Frenos neumáticos de disco con sistema de seguridad automático."
+        "Frenos neumáticos de disco con sistema de seguridad automático.",
+        "/Img/frenos.png"
       );
 
       // Hotspots del lado izquierdo (valores negativos de X)
       createHotspot(
-        new THREE.Vector3(-2, 1.3, 2),
+        new THREE.Vector3(1, 0, 0.6),
         "⛽Depósito de Combustible⛽",
-        "Capacidad de 5000 litros de diésel para largas distancias."
+        "Capacidad de 5000 litros de diésel para largas distancias.",
+        "/Img/combustible.png"
       );
       createHotspot(
-        new THREE.Vector3(-2, 0.8, -1),
+        new THREE.Vector3(-1, 1.1, 0),
         "Bogies",
-        "Sistema de bogies con suspensión neumática para mayor confort."
+        "Sistema de bogies con suspensión neumática para mayor confort.",
+        "/Img/bogie.png"
       );
 
       // Hotspot frontal/trasero si es necesario
       createHotspot(
-        new THREE.Vector3(-0.2, 0, 0),
+        new THREE.Vector3(-2.2, 0, 0),
         "🚆Parte Delantera🚆",
-        "Diseño aerodinámico para reducir resistencia al aire."
+        "Diseño aerodinámico para reducir resistencia al aire.",
+        "/Img/delantera.png"
       );
 
       createHotspot(
-        new THREE.Vector3(1.8, 1.2, -2),
+        new THREE.Vector3(1.4, 1.1, 0),
         "Sistema Eléctrico",
-        `Generador principal: Alternador trifásico 4,500 VCA
-    Rectificación: Puente de diodos de silicio
-    Inversores: IGBT para motores de tracción
-    Baterías: 4 x 12V 200Ah (sistema auxiliar)
-    Circuitos de control: Redundantes (2 canales)
-    Protecciones: Disyuntores digitales
-    Consumo eléctrico: 1,500 A (plena carga)`
+        `Generador principal: Alternador trifásico 4,500 VCA\nRectificación: Puente de diodos de silicio\nInversores: IGBT para motores de tracción\nBaterías: 4 x 12V 200Ah (sistema auxiliar)\nCircuitos de control: Redundantes (2 canales)\nProtecciones: Disyuntores digitales\nConsumo eléctrico: 1,500 A (plena carga)`,
+        "/Img/.png"
       );
     }
   },
