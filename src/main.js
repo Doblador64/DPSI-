@@ -159,7 +159,7 @@ function onMouseClick(event) {
       text: hotspot.userData.description,
       icon: "info",
       imageUrl: hotspot.userData.imageUrl, // Mostrar imagen
-      imageWidth: 300,
+      imageWidth: 350,
       imageHeight: 300,
       confirmButtonText: "Cerrar",
     });
@@ -323,7 +323,7 @@ loader.load(
         new THREE.Vector3(1.4, 1.1, 0),
         "Sistema Eléctrico",
         `Generador principal: Alternador trifásico 4,500 VCA\nRectificación: Puente de diodos de silicio\nInversores: IGBT para motores de tracción\nBaterías: 4 x 12V 200Ah (sistema auxiliar)\nCircuitos de control: Redundantes (2 canales)\nProtecciones: Disyuntores digitales\nConsumo eléctrico: 1,500 A (plena carga)`,
-        "/Img/.png"
+        "/Img/sistemaElectrico.png"
       );
     }
   },
