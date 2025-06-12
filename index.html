@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="/Img/subway.ico" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./src/test.js" type="module"></script>
 
 </head>
 
@@ -367,19 +368,16 @@
         </div>
     </section>
 
-
+    <!-- Contenedor para mostrar preguntas dinámicamente -->
+    <section class="questions" id="questions">
+        <div id="question-container" class="container">
+            <h2>Preguntas</h2>
+            <p>Responde las siguientes preguntas:</p>
+        </div>
+    </section>
 
     <footer>
         <div class="footer-content">
-            <!-- <ul class="footer-links">
-                Enlaces simplificados según lo solicitado
-            </ul> -->
-            <!-- <ul class="social-links">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-            </ul> -->
             <p class="copyright">&copy; 2025 Ingeniería Ferroviaria UPIICSA. Todos los derechos reservados.</p>
         </div>
     </footer>
@@ -447,8 +445,6 @@
             });
         });
 
-        // Formulario de contacto - eliminado según lo solicitado
-
         // Código para el modelo 3D de la locomotora usando THREE.js
         // Nota: Este es un placeholder para cuando implementes Three.js
         function initLocomotive3D() {
@@ -461,10 +457,6 @@
                 '</div>';
         }
 
-        // Inicializar modelo 3D cuando el DOM esté listo
-        document.addEventListener('DOMContentLoaded', function () {
-            initLocomotive3D();
-        });
     </script>
 </body>
 
