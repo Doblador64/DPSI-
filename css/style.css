@@ -438,87 +438,26 @@ section {
   margin-bottom: 1rem;
 }
 
-.contact {
-  background-color: var(--primary-color);
-  color: var(--white);
-}
-
-.contact-content {
+.questions {
+  background-color: var(--light-bg);
   display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
+  justify-items: center;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.contact-info {
-  flex: 1;
-  min-width: 300px;
-}
-
-.contact-info h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-}
-
-.contact-info p {
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-}
-
-.contact-info i {
-  font-size: 1.2rem;
-  margin-right: 1rem;
-  color: var(--accent-color);
-}
-
-.contact-form {
-  flex: 2;
-  min-width: 300px;
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 0.8rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.form-group textarea {
-  height: 150px;
-  resize: vertical;
-}
-
-.form-button {
-  background-color: var(--secondary-color);
-  color: var(--white);
-  border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 30px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.form-button:hover {
-  background-color: #ff8533;
+.questions li {
+  list-style: none;
+  color: var(--text-color);
+  font-size: 1.1rem;
 }
 
 footer {
   background-color: #001a33;
   color: var(--white);
+  margin-top: 30px;
   padding: 2rem 0;
   text-align: center;
 }
