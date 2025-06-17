@@ -1,6 +1,6 @@
 const questions = [
   {
-    question: "¿Para que sirve un bogie?",
+    question: "¿Para qué sirve un bogie?",
     options: [
       "Es un sistema de bogies con suspensión neumática para mayor confort",
       "Es un sistema de bogies con suspensión de resortes para mayor confort",
@@ -11,12 +11,12 @@ const questions = [
   },
   {
     question:
-      "¿Cual es la capacidad de un tanque de combustible de una locmotora?",
+      "¿Cuál es la capacidad de un tanque de combustible de una locomotora?",
     options: ["30000 Lts", "3000 Lts", "5000 Lts", "10000 Lts"],
     correctAnswer: "5000 Lts",
   },
   {
-    question: "¿Cuantos tipos de locotoras que existen?",
+    question: "¿Cuántos tipos de locotoras que existen?",
     options: ["3", "6", "4", "5"],
     correctAnswer: "4",
   },
@@ -26,14 +26,14 @@ const questions = [
     correctAnswer: "De disco",
   },
   {
-    question: "¿Cual es el ultimo desarrollo para trenes?",
+    question: "¿Cuál es el último desarrollo para trenes?",
     options: [
-      "Tecnologias de hidrógeno y levitación magnética",
+      "Tecnologías de hidrógeno y levitación magnética",
       "Trenes de alta velocidad",
       "Trenes de carga pesada",
       "Trenes de pasajeros",
     ],
-    correctAnswer: "Tecnologias de hidrógeno y levitación magnética",
+    correctAnswer: "Tecnologías de hidrógeno y levitación magnética",
   },
 ];
 
