@@ -454,6 +454,23 @@ section {
   font-size: 1.1rem;
 }
 
+/* Estilos para el botón */
+.validate-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &hover {
+    background-color: darkgreen;
+  }
+}
+
 footer {
   background-color: #001a33;
   color: var(--white);

@@ -21,7 +21,7 @@ const questions = [
     correctAnswer: "4",
   },
   {
-    question: "¿Qué tipo de frenos neumaticos utiliza la locmotora?",
+    question: "¿Qué tipo de frenos neumaticos utiliza la locomotora?",
     options: ["Ruedas de acero", "De disco", "De tambor", "De zapata"],
     correctAnswer: "De disco",
   },
@@ -73,6 +73,7 @@ questions.forEach((q, index) => {
 
 // Agregar un botón para validar respuestas
 const validateButton = document.createElement("button");
+validateButton.classList.add("validate-btn");
 validateButton.textContent = "Check";
 validateButton.addEventListener("click", () => {
   const userAnswers = [];
